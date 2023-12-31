@@ -1,0 +1,312 @@
+@import "/reset.css";
+@font-face {
+    font-family: "Gilroy GEO Heavy";
+    src: url("https://db.onlinewebfonts.com/t/e8265e33dfba2c2751ec163c68553e74.eot");
+    src: url("https://db.onlinewebfonts.com/t/e8265e33dfba2c2751ec163c68553e74.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/e8265e33dfba2c2751ec163c68553e74.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/e8265e33dfba2c2751ec163c68553e74.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/e8265e33dfba2c2751ec163c68553e74.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/e8265e33dfba2c2751ec163c68553e74.svg#Gilroy GEO Heavy")format("svg");
+}
+*{
+   font-family: "Gilroy GEO Heavy";
+}
+html{
+scroll-behavior: smooth;
+}
+body{
+    background-color: #ff4e00 ;
+    background-image: url(/images/flag2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding:20px 70px;
+ overflow: hidden;
+
+}
+.overlay-image {
+ width: 200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.container_info{
+  width: fit-content;
+  margin: 0 auto;
+  /* background-color: #fff3ee; */
+   background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px 40px 40px 40px;
+  border-radius: 20px;
+  margin-top: 90px;
+}
+.orange_title{
+  color:#ec4424;
+  font-size: 29px;
+  text-align: center;
+  
+}
+.black_title, .catalog_title, .catalog_block_item_title
+{
+  color:#231f20;
+  font-size: 29px;
+  text-align: center;
+}
+.small_black_title{
+  text-align: center;
+  font-size: 19px;
+  color:#231f20;
+  margin-top: 30px;
+}
+.title_num{
+  text-align: center;
+  font-size: 60px;
+  margin: 0;
+ color:#ec4424;
+}
+hr{
+  width: 100%;
+  height: 3px;
+  background-color:#231f20 ;
+}
+.catalog_block {
+ display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.catalog_block_item{
+
+background-color: #ffffff;
+border:1px solid #59595b;
+border-radius: 10px;
+padding: 10px;
+}
+.catalog_block_item_img{
+  width:200px;
+  height: 200px;
+  margin:20px auto;
+   object-fit: contain;
+   object-position: top;
+}
+.need_point,.place_left{
+  font-size: 15px;
+    color:#231f20;
+   padding-left: 40px;
+}
+.star_point{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap:7px;
+}
+.star{
+  width: 30px;
+}
+.point{
+  color:#ed1c24;
+    font-size: 29px;
+}
+.place_left{
+padding-top: 20px;
+}
+.gift_num{
+  color:#00aeef;
+  font-size: 29px;
+}
+.catalog_info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.full_catalog{
+  padding-top: 20px;
+}
+.catalog_button{
+  font-size:33px;
+  letter-spacing: 10px;
+  padding: 5px 15px;
+  color: #fffefe;
+  background-color: #6bbc47;
+  border: none;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+   margin: 0 auto;
+   cursor: pointer;
+   border-radius: 15px;
+   margin-top: 25px;
+    transition: background-color 0.3s;
+}
+.catalog_button:hover {
+  background-color: #bcbdc0; /* Change the color when the button is clicked */
+}
+@media (max-width: 1024px) {
+
+.container {
+  padding:20px 40px;
+  /* max-width: 600px; */
+}
+.overlay-image {
+ width: 150px;
+  height: auto;
+  
+}
+.container_info{
+  margin-top: 50px;
+}
+.orange_title{
+  font-size: 24px; 
+}
+.black_title, .catalog_title, .catalog_block_item_title
+{
+  font-size: 14px;
+}
+.small_black_title{
+  font-size: 14px;
+  margin-top: 20px;
+}
+.title_num{
+  font-size: 50px;
+}
+hr{
+  width: 100%;
+  height: 3px;
+  background-color:#231f20 ;
+}
+.catalog_block_item_img{
+  width:160px;
+  height: 160px;
+}
+.need_point,.place_left{
+  font-size: 10px;
+   padding-left: 30px;
+}
+.star_point{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap:7px;
+}
+.star{
+  width: 24px;
+}
+.point{
+    font-size: 24px;
+}
+.place_left{
+padding-top: 15px;
+}
+.gift_num{
+  font-size: 24px;
+}
+.full_catalog{
+  padding-top: 20px;
+}
+.catalog_button{
+  font-size:28px;
+  letter-spacing: 8px;
+  padding: 5px 15px;
+   border-radius: 15px;
+   margin-top: 25px;
+}
+
+}
+@media (max-width: 780px) {
+body {
+ background-size: contain;
+}
+}
+@media (max-width: 580px) {
+      body {
+ background-size: contain auto;
+}
+.container {
+  padding:15px 30px;
+}
+  .overlay-image {
+  width: 120px;
+}
+.container_info{
+  padding:10px 20px 30px 20px;
+  margin-top: 30px;
+}
+.orange_title{
+  font-size: 10px; 
+}
+.black_title, .catalog_title, .catalog_block_item_title
+{
+  font-size: 10px;
+}
+.small_black_title{
+  font-size: 10px;
+  margin-top: 20px;
+}
+.title_num{
+  font-size: 40px;
+}
+hr{
+  width: 100%;
+  height: 3px;
+  background-color:#231f20 ;
+}
+.catalog_block_item_img{
+  width:120px;
+  height: 120px;
+}
+.need_point,.place_left{
+  font-size: 8px;
+   padding-left: 25px;
+}
+.star_point{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap:3px;
+}
+.star{
+  width: 14px;
+}
+.point{
+    font-size: 14px;
+}
+.place_left{
+padding-top: 14px;
+ white-space: nowrap;
+}
+.gift_num{
+  font-size: 14px;
+}
+.full_catalog{
+  padding-top: 10px;
+}
+.catalog_block{
+  gap: 10px;
+}
+.catalog_button{
+  font-size:24px;
+  letter-spacing: 3px;
+  padding: 5px 10px;
+   border-radius: 10px;
+   margin-top: 15px;
+}
+
+}
+@media (max-width: 420px) {
+    body {
+ background-size: contain;
+}
+  .overlay-image {
+  width: 80px;
+}
+.container_info{
+margin-top: 20px;
+padding: 10px 10px 20px 10px;
+}
+.catalog_block{
+  grid-template-columns: repeat(1, 1fr);
+}
+
+}

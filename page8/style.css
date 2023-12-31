@@ -1,0 +1,283 @@
+@import url("/reset.css");
+@font-face {
+    font-family: "Gilroy GEO Heavy";
+    src: url("https://db.onlinewebfonts.com/t/e8265e33dfba2c2751ec163c68553e74.eot");
+    src: url("https://db.onlinewebfonts.com/t/e8265e33dfba2c2751ec163c68553e74.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/e8265e33dfba2c2751ec163c68553e74.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/e8265e33dfba2c2751ec163c68553e74.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/e8265e33dfba2c2751ec163c68553e74.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/e8265e33dfba2c2751ec163c68553e74.svg#Gilroy GEO Heavy")format("svg");
+}
+*{
+   font-family: "Gilroy GEO Heavy";
+}
+html{
+scroll-behavior: smooth;
+}
+body{
+    background-color: #ff4e00 ;
+    background-image: url(/images/flag2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding:20px 70px;
+ overflow: hidden;
+
+}
+.overlay-image {
+ width: 200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.container_info{
+  width: fit-content;
+  margin: 0 auto;
+  /* background-color: #fff3ee; */
+   background-color: rgba(255, 243, 238, 0.9);
+  padding: 10px 30px 30px 30px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.star{
+  width:40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   margin: 0 auto;
+}
+.gift_block{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+gap:50px
+}
+.win_title{
+  margin-top: 90px;
+}
+.win{
+  font-size: 40px;
+  text-align: center;
+  color:#ffffff;
+   margin: 0;
+}
+.congratulation{
+  text-align: center;
+  font-size: 70px;
+  color:#fff100;
+  margin: 0;
+ 
+}
+.firework{
+  width:200px;
+ padding-top: 100px;
+}
+.point{
+  color:#00adee;
+  font-size: 100px;
+  text-align: center;
+  margin: 0;
+}
+.point__geo{
+font-size: 40px;
+color:#231f20;
+text-align: center;
+padding-bottom: 20px;
+margin: 0;
+padding-left: 40px;
+}
+.firework_two{
+  width:200px;
+ padding-top: 100px;
+}
+.blue_button{
+  font-size:50px;
+  letter-spacing: 10px;
+  padding: 10px 70px;
+  color: #fffefe;
+  background-color: #06b6ec;
+  border: 3px solid #ffffff;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+   margin: 0 auto;
+   cursor: pointer;
+   border-radius: 145px;
+   margin-top: 42px;
+}
+
+@media (max-width: 1024px) {
+.container {
+  padding:20px 40px;
+}
+.overlay-image {
+ width: 150px;
+  height: auto;
+  
+}
+.container_info{
+margin-top: 50px;
+}
+.star{
+  width:30px;
+ margin: 0 auto;
+}
+.point{
+  font-size: 90px;
+}
+.point__geo{
+font-size: 30px;
+text-align: center;
+
+}
+.gift_block{
+  gap:30px
+}
+.win_title{
+  margin-top: 70px;
+}
+.congratulation{
+  font-size: 60px; 
+}
+.win{
+  font-size: 30px;
+
+}
+.firework{
+  width:150px;
+  padding-top: 90px;
+}
+.iphone{
+  width: 150px;
+}
+.firework_two{
+  width:150px;
+   padding-top: 90px;
+}
+.blue_button{
+   padding: 10px 50px;
+  font-size:40px;
+  letter-spacing: 8px;
+  border: 2px solid #ffffff;
+   border-radius: 145px;
+   margin-top: 32px;
+}
+}
+@media (max-width: 780px) {
+body {
+ background-size: contain;
+}
+}
+@media (max-width: 575px) {
+    body {
+ background-size: contain auto;
+}
+.container {
+  padding:15px 30px;
+}
+  .overlay-image {
+  width: 120px;
+}
+.container_info{
+  padding:10px 10px 10px 10px;
+  margin-top: 30px;
+}
+.star{
+  width:25px;
+ margin: 0 auto;
+}
+.point{
+  font-size: 80px;
+}
+.point__geo{
+font-size: 25px;
+}
+.win_title{
+  margin-top: 50px;
+}
+.congratulation{
+  font-size: 50px; 
+}
+.win{
+  font-size: 20px;
+
+}
+.firework{
+  width:100px;
+  padding-top: 80px;
+}
+.firework_two{
+  width:100px;
+   padding-top: 80px;
+}
+.blue_button{
+  padding: 10px 40px;
+ font-size:30px;
+  letter-spacing: 3px;
+  border: 1px solid #ffffff;
+   border-radius: 145px;
+   margin-top: 22px;
+}
+}
+@media (max-width: 385px) {
+    body {
+ background-size: contain;
+}
+  .overlay-image {
+  width: 80px;
+}
+.container_info{
+margin-top: 20px;
+padding: 10px 10px 20px 10px;
+}
+.gift_block{
+  gap:10px
+}
+.star{
+  width:20px;
+ margin: 0 auto;
+}
+.point{
+  font-size: 70px;
+}
+.point__geo{
+font-size: 20px;
+}
+.win_title{
+  margin-top: 50px;
+}
+.win{
+  font-size: 20px;
+
+}
+.congratulation{
+  font-size: 40px; 
+}
+
+.win_title{
+  margin-top: 30px;
+}
+.congratulation{
+  font-size: 40px; 
+}
+
+.firework{
+  width:70px;
+  padding-top: 70px;
+}
+.firework_two{
+  width:70px;
+   padding-top: 70px;
+}
+.blue_button{
+  padding: 7px 30px;
+  font-size:20px;
+  letter-spacing: 2px;
+  margin-top: 15px;
+}
+}
